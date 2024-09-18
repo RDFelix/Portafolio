@@ -1,0 +1,318 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 20px 10dvw;
+    background-color: #000000;
+    background-image: radial-gradient(#ffffff33 1px, #00091d 1px);
+    background-size: 20px 20px;
+    color: aliceblue;
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+strong{
+    color: rgb(77, 201, 201);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: fixed;
+
+    > nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        backdrop-filter: blur(1px);
+        background-color: rgba(240, 248, 255, 0.219);
+        border-radius: 50px;
+        width: auto;
+        padding: 0 5px;
+        margin: 0;
+        list-style: none;
+
+        > li{
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 50px;
+
+            &:hover{
+                cursor: pointer;
+                scale: 1.05;
+                background-color: rgb(118, 206, 206);
+            }
+
+            > a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(1px);
+    background-color: rgba(240, 248, 255, 0.219);
+    border-radius: 50px;
+
+    > p{
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    > section{
+        display: flex;
+        > a{
+            margin: 0px 10px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+    }
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > figure{ 
+        display: flex;
+        justify-content: end;
+
+        > img{
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin: 30px;
+        }
+
+        > span{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-color: rgba(151, 19, 212, 0.925);
+            border-radius: 50%;
+            margin: 45px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    > article{
+        > h1{
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        > h2{
+            margin-top: 0;
+        }
+
+        > nav{
+            display: flex;
+            > a{
+                display: flex;
+
+                margin-right: 10px;
+                width: auto;
+                border: 0px solid rgb(34, 44, 95);
+                padding: 5px 10px;
+                border-radius: 50px;
+                background-color: rgb(77, 201, 201);
+                color: black;
+                text-decoration: none;
+                
+                &:hover{
+                    scale: 1.05;
+                    background-color: rgb(118, 206, 206);
+                }
+            }
+        }
+    }
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+
+    > h2{
+        font-size: 28px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: rgb(77, 201, 201);
+    }
+
+    > article{
+        border-left: 1px solid rgb(82, 82, 82);
+        width: 100%;
+        padding-bottom: 40px;
+
+        > article{
+            margin: 0 20px;
+            width: 100%;
+
+            > h2{
+                margin: 0px;
+            }
+
+            > small{
+                text-align: center;
+
+                &.finalizado{
+                   color: rgb(47, 202, 68); 
+                }
+
+                &.actualmente{
+                    color: rgb(202, 161, 47); 
+                }
+            }
+
+            > p{
+                margin: 0px;
+            }
+        }
+
+        > span{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(118, 206, 206);
+            border-radius: 50%;
+            transform: translate(-11px, 0px);
+        }
+    }
+}
+
+.habilidades{
+    > h2{
+        font-size: 28px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: rgb(77, 201, 201);
+    }
+    
+    > article{
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        >figure{
+            > svg{
+                width: 60px;
+                height: 60px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.sobre_mi{
+    > h2{
+        font-size: 28px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: rgb(77, 201, 201);
+    }
+
+    > p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.contacto{
+    > form{
+        width: 50%;
+        min-width: 300px;
+
+        > h2{
+            font-size: 28px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            color: rgb(77, 201, 201);
+        }
+
+        > fieldset{
+            > article{
+                width: 97.5%;
+                height: auto;
+                margin-bottom: 0px;
+            }
+            > article label span{
+                background-color: rgb(117, 117, 117);
+                padding-bottom: 10px;
+            }
+
+            > article label input{
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 15px;
+                background-color: rgb(117, 117, 117);
+                padding-top: 30px;
+            }
+
+            > article label textarea{
+                width: 100%;
+                font-size: 16px;
+                border-radius: 15px;
+                min-width: 100%;
+                max-width: 100%;
+                resize: none;
+                height: 150px;
+                padding-top: 30px;
+                background-color: rgb(117, 117, 117);
+
+            }
+
+            > button{
+                display: flex;
+
+                margin-right: 10px;
+                width: auto;
+                border: 0px solid rgb(34, 44, 95);
+                padding: 10px 20px;
+                border-radius: 50px;
+                background-color: rgb(77, 201, 201);
+                color: black;
+                text-decoration: none;
+                font-size: 16px;
+                
+                &:hover{
+                    scale: 1.05;
+                    background-color: rgb(118, 206, 206);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Estilos por individuales */
+.flex{display: flex;}
+.wrap{flex-wrap: wrap;}
+.m100{padding: 50px 0;}
+.j_around{justify-content: space-around;}
+
